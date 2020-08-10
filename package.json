@@ -6,14 +6,16 @@
   "scripts": {
     "clean": "del _dist",
     "dev:css": "postcss src/css/site.css -o _dist/css/site.css --watch --verbose",
+    "dev:eleventy": "eleventy --serve --watch",
     "dev:js": "webpack --config webpack.config.js --watch",
+    "build:eleventy": "ELEVENTY_ENV=production eleventy",
     "build:css": "NODE_ENV=production postcss src/css/site.css -o _dist/css/site.css",
     "build:js": "webpack -p --config webpack.config.js",
     "analyze:build": "webpack --profile --json > _analyze.json",
     "analyze:serve": "webpack-bundle-analyzer _analyze.json",
     "analyze": "npm-run-all clean analyze:* --print-label",
     "develop": "npm-run-all clean --parallel dev:* --print-label",
-    "build": "npm-run-all clean build:* --print-label"
+    "build": "npm-run-all clean --parallel build:* --print-label"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,7 @@
   },
   "homepage": "https://github.com/fephil/jamstack-website#readme",
   "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
     "autoprefixer": "^9.8.6",

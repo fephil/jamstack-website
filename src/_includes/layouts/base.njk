@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="icon" href="favicon.png" type="image/png" /> -->
+  <title>[hard coded title]</title>
+  <script>document.documentElement.classList.remove('no-js');</script>
+  <link rel="stylesheet" href="css/site.css">
+  {% block pageHead %}
+  {% endblock %}
+</head>
+<body>
+  {% include "partials/global-header.njk" %}
+
+  <main id="content" tabindex="-1">
+    {% block content %}
+      {{ content | safe }}
+    {% endblock content %}
+  </main>
+
+  {% include "partials/global-footer.njk" %}
+  {% block pageFoot %}
+  {% endblock %}
+
+  <script src="js/bundle.js"></script>
+</body>
+</html>

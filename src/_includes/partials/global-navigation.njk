@@ -1,0 +1,11 @@
+{% if navigation.items %}
+  <nav class="" aria-label="">
+    <ul class="">
+      {% for item in navigation.items %}
+        <li class="">
+          <a href="{{ item.url }}">{{ item.text }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}
