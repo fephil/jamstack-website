@@ -6,7 +6,7 @@
 
 * Author: [Phil Lennon](https://phil.dev)
 * Source: [github.com/fephil/jamstack-website](https://github.com/fephil/jamstack-website)
-* Issues and Suggestions: [github.com/fephil/understructure-website/issues](https://github.com/fephil/jamstack-website/issues)
+* Issues and Suggestions: [github.com/fephil/jamstack-website/issues](https://github.com/fephil/jamstack-website/issues)
 * Twitter: [@frontendphil](https://twitter.com/frontendphil)
 * Email: [enquiry@phil.dev](mailto:enquiry@phil.dev)
 * Trello Life List [http://bit.ly/life-list](http://bit.ly/life-list)
