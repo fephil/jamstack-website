@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "clean": "del _dist",
-    "dev:js": "webpack --watch --config webpack.config.js",
+    "dev:css": "postcss src/css/site.css -o _dist/css/site.css --watch --verbose",
+    "dev:js": "webpack --config webpack.config.js --watch",
+    "build:css": "NODE_ENV=production postcss src/css/site.css -o _dist/css/site.css",
     "build:js": "webpack -p --config webpack.config.js",
     "analyze:build": "webpack --profile --json > _analyze.json",
     "analyze:serve": "webpack-bundle-analyzer _analyze.json",
     "analyze": "npm-run-all clean analyze:* --print-label",
-    "develop": "npm-run-all clean build:* dev:* --print-label",
+    "develop": "npm-run-all clean --parallel dev:* --print-label",
     "build": "npm-run-all clean build:* --print-label"
   },
   "repository": {
@@ -32,9 +34,12 @@
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
+    "autoprefixer": "^9.8.6",
     "babel-loader": "^8.1.0",
     "del-cli": "^3.0.1",
     "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1",
     "webpack": "^4.44.1",
     "webpack-bundle-analyzer": "^3.8.0",
     "webpack-cli": "^3.3.12"
