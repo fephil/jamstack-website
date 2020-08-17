@@ -1,15 +1,15 @@
 {
   "name": "jamstack-website",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "An opinionated workflow for building modern headless CMS websites",
   "main": "index.js",
   "scripts": {
-    "clean": "del _dist",
-    "dev:css": "postcss src/css/site.css -o _dist/css/site.css --watch --verbose",
+    "clean": "del _site",
+    "dev:css": "postcss src/css/site.css -o _site/css/site.css --watch --verbose",
     "dev:eleventy": "eleventy --serve --watch",
     "dev:js": "webpack --config webpack.config.js --watch",
     "build:eleventy": "ELEVENTY_ENV=production eleventy",
-    "build:css": "NODE_ENV=production postcss src/css/site.css -o _dist/css/site.css",
+    "build:css": "NODE_ENV=production postcss src/css/site.css -o _site/css/site.css",
     "build:js": "webpack -p --config webpack.config.js",
     "analyze:build": "webpack --profile --json > _analyze.json",
     "analyze:serve": "webpack-bundle-analyzer _analyze.json",
@@ -27,7 +27,7 @@
     "webpack",
     "tailwind"
   ],
-  "author": "Phil Lennon",
+  "author": "Phil Lennon <enquiry@phil.dev>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fephil/jamstack-website/issues"
@@ -39,7 +39,9 @@
     "@babel/preset-env": "^7.11.0",
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.1.0",
+    "cssnano": "^4.1.10",
     "del-cli": "^3.0.1",
+    "html-minifier": "^4.0.0",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^7.1.1",
     "postcss-import": "^12.0.1",

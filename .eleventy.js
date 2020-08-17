@@ -1,26 +1,39 @@
 
-// Import filters
-// TBA
+const htmlmin = require('html-minifier');
 
-// Import transforms
-// TBA
-
-// Import data files
-const site = require('./src/_data/site.json');
+const isProduction = process.env.ELEVENTY_ENV === 'production';
 
 module.exports = function(config) {
-  // Filters
-  // TBA
-
   // Layout Aliases
   config.addLayoutAlias('base', 'layouts/base.njk');
 
   // Transforms
-  // TBA
+  config.addTransform('htmlmin', function(content, outputPath) {
+    if ( outputPath.endsWith('.html') && isProduction ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+
+      return minified;
+    }
+
+    return content;
+  });
 
   // Assets
   config.addPassthroughCopy('src/fonts');
   config.addPassthroughCopy('src/images');
+  config.addPassthroughCopy({ 'public': '/' });
+
+  // Shortcodes
+  config.addNunjucksShortcode('test', function(item) {
+    return `<span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium">${item}</span>`;
+  });
+
+  // Filters
+  // TBA
 
   // Collections
   // TBA
@@ -31,7 +44,7 @@ module.exports = function(config) {
   return {
     dir: {
       input: 'src',
-      output: '_dist',
+      output: '_site',
       data: '_data',
       includes: '_includes'
     },

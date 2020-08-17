@@ -13,7 +13,7 @@
 <body>
   {% include "partials/global-header.njk" %}
 
-  <main id="content" tabindex="-1">
+  <main id="content">
     {% block content %}
       {{ content | safe }}
     {% endblock content %}
