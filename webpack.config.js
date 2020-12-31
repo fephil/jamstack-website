@@ -1,11 +1,11 @@
 module.exports = {
-  mode: process.env.ELEVENTY_ENV || 'development',
+  mode: process.env.NODE_ENV || "development",
   entry: {
-    app: __dirname + '/src/js/index.js',
+    app: __dirname + "/src/js/index.js",
   },
   output: {
-    path: __dirname + '/_site/js/',
-    filename: 'bundle.js',
+    path: __dirname + "/_site/js/",
+    filename: "bundle.js",
   },
   module: {
     rules: [
@@ -13,12 +13,12 @@ module.exports = {
         test: /\.m?js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            presets: ['@babel/preset-env']
-          }
-        }
-      }
-    ]
-  }
+            presets: ["@babel/preset-env"],
+          },
+        },
+      },
+    ],
+  },
 };
