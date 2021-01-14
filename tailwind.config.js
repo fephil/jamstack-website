@@ -6,10 +6,6 @@ module.exports = {
   variants: {},
   plugins: [],
   purge: {
-    mode: 'all',
-    content: [
-      './src/**/*.njk',
-      './.eleventy.js',
-    ]
+    content: ["./src/**/*.njk", "./src/js/modules/**/*.js", "./.eleventy.js"],
   },
-}
+};
