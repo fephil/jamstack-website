@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="icon" href="favicon.png" type="image/png" /> -->
-  <title>[hard coded title]</title>
+  <title>{{ renderData.title or title }} - {{ global.siteTitle }}</title>
+  <meta name="Description" content="{{ renderData.description or description or siteSettings.description }}">
   <script>document.documentElement.classList.remove('no-js');</script>
   <link rel="stylesheet" href="css/site.css">
   {% block pageHead %}
