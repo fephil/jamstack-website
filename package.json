@@ -1,6 +1,6 @@
 {
   "name": "jamstack-website",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "An opinionated workflow for building modern headless CMS websites",
   "main": "index.js",
   "scripts": {
@@ -37,19 +37,19 @@
     "@11ty/eleventy": "^0.11.1",
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "autoprefixer": "^10.1.0",
+    "autoprefixer": "^10.2.1",
     "babel-loader": "^8.2.2",
     "cross-env": "^7.0.3",
     "cssnano": "^4.1.10",
     "del-cli": "^3.0.1",
     "html-minifier": "^4.0.0",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.2.2",
+    "postcss": "^8.2.4",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.0",
     "tailwindcss": "^2.0.2",
-    "webpack": "^5.11.1",
+    "webpack": "^5.14.0",
     "webpack-bundle-analyzer": "^4.3.0",
-    "webpack-cli": "^4.3.0"
+    "webpack-cli": "^4.3.1"
   }
 }
