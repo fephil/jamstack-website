@@ -1,6 +1,6 @@
 # jamstack-website
 
-[![GitHub release](https://img.shields.io/github/release/fephil/jamstack-website.svg?maxAge=2592000)](https://github.com/fephil/jamstack-website/releases)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/fephil/jamstack-website?include_prereleases) [![GitHub license](https://img.shields.io/github/license/fephil/jamstack-website)](https://github.com/fephil/jamstack-website/blob/main/LICENSE)
 
 **An opinionated workflow for building modern headless CMS websites**
 
