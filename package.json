@@ -4,11 +4,11 @@
   "description": "An opinionated workflow for building modern headless CMS websites",
   "main": "index.js",
   "scripts": {
-    "clean": "del _site",
+    "clean": "del-cli _site",
     "dev:css": "postcss src/css/site.css -o _site/css/site.css --watch --verbose",
     "dev:eleventy": "eleventy --serve --watch",
     "dev:js": "webpack --config webpack.config.js --watch",
-    "build:eleventy": "ELEVENTY_ENV=production eleventy",
+    "build:eleventy": "cross-env ELEVENTY_ENV=production eleventy",
     "build:css": "cross-env NODE_ENV=production postcss src/css/site.css -o _site/css/site.css",
     "build:js": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "analyze:build": "webpack --profile --json > _analyze.json",
