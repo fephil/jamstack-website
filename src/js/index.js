@@ -1,1 +1,3 @@
-console.log('test');
+import example from "./modules/example";
+
+example();
