@@ -1,3 +1,3 @@
-import example from "./modules/example";
+import example from './modules/example';
 
 example();

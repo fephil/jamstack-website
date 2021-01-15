@@ -2,7 +2,7 @@
 
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/fephil/jamstack-website?include_prereleases) [![GitHub license](https://img.shields.io/github/license/fephil/jamstack-website)](https://github.com/fephil/jamstack-website/blob/main/LICENSE)
 
-**An opinionated workflow for building modern headless CMS websites**
+**An opinionated workflow for building modern Jamstack (static) websites**
 
 * Author: [Phil Lennon](https://phil.dev)
 * Source: [github.com/fephil/jamstack-website](https://github.com/fephil/jamstack-website)

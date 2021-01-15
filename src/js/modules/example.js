@@ -1,3 +1,7 @@
-export default function () {
-  console.log("example module");
-}
+/* eslint no-console: off */
+
+const example = () => {
+  console.log('example module');
+};
+
+export default example;
