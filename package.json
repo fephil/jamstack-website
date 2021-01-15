@@ -15,7 +15,8 @@
     "analyze:serve": "webpack-bundle-analyzer _analyze.json",
     "analyze": "npm-run-all clean analyze:* --print-label",
     "develop": "npm-run-all clean --parallel dev:* --print-label",
-    "build": "npm-run-all clean --parallel build:* --print-label"
+    "build": "npm-run-all clean --parallel build:* --print-label",
+    "lint": "eslint --fix src/js/**"
   },
   "repository": {
     "type": "git",
