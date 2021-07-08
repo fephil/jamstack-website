@@ -2,7 +2,7 @@
   "name": "jamstack-website",
   "version": "0.4.0",
   "description": "An opinionated workflow for building modern Jamstack (static) websites",
-  "main": "index.js",
+  "main": "package.json",
   "scripts": {
     "clean": "del-cli _site",
     "dev:css": "postcss src/css/site.css -o _site/css/site.css --watch --verbose",
