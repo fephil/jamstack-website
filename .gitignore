@@ -24,6 +24,5 @@ lerna-debug.log*
 # Project
 node_modules
 _site
-_analyze.json
 .env
 .env.*

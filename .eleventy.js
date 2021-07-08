@@ -40,6 +40,11 @@ module.exports = function (config) {
   // Plugins
   // TBA
 
+  // Custom Watch Targets
+  // NOTE: This will force eleventy to rebuild when any Javascript changes. Not "hot reloaded" but better than nothing
+  config.addWatchTarget('./src/js/');
+  config.addWatchTarget('./src/css/');
+
   return {
     dir: {
       input: 'src',
