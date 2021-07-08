@@ -22,9 +22,8 @@
   "keywords": [
     "jamstack",
     "eleventy",
-    "webpack",
+    "esbuild",
     "tailwind",
-    "babel",
     "eslint",
     "prettier",
     "postcss"
