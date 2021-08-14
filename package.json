@@ -1,6 +1,6 @@
 {
   "name": "jamstack-website",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "An opinionated workflow for building modern Jamstack (static) websites",
   "main": "package.json",
   "scripts": {
@@ -36,27 +36,27 @@
   "homepage": "https://github.com/fephil/jamstack-website#readme",
   "engines": {
     "node": "14 || 16",
-    "npm": "~7.10.0"
+    "npm": "7"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "autoprefixer": "^10.2.6",
+    "autoprefixer": "^10.3.1",
     "cross-env": "^7.0.3",
-    "cssnano": "^5.0.6",
-    "del-cli": "^4.0.0",
-    "esbuild": "^0.12.15",
-    "eslint": "^7.30.0",
+    "cssnano": "^5.0.7",
+    "del-cli": "^4.0.1",
+    "esbuild": "^0.12.20",
+    "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-import": "^2.24.0",
     "eslint-plugin-prettier": "^3.4.0",
     "html-minifier": "^4.0.0",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.3.5",
+    "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.2",
-    "postcss-nested": "^5.0.5",
+    "postcss-nested": "^5.0.6",
     "prettier": "^2.3.2",
-    "tailwindcss": "^2.2.4"
+    "tailwindcss": "^2.2.7"
   }
 }
