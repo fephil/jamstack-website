@@ -26,14 +26,14 @@ This workflow contains:
 - Eslint
 - Prettier
 
-This workflow isn't designed for use as a single page app architecture such as Vue.js, however you can use javascript to augment pages if needed.
+This workflow isn't designed for use with single page app architecture such as Vue.js, however you can use javascript to augment pages if needed.
 
 Comments, suggestions & pull requests are always welcome. See the [issues list](https://github.com/fephil/jamstack-website/issues) for more information about future enhancements and changes.
 
 ## Requirements
 
 - Node 14 LTS or Node 16
-- NPM 7 (however, if package-lock.json is deleted, Yarn or NPM 6 can be used)
+- NPM 7 (however, if package-lock.json is deleted, Yarn or NPM v6 can be used)
 
 ### Optional Requirements
 
